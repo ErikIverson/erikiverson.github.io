@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>P.O.O.H.P.S</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Dosis:400,700" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+
+  <body style="font-family:Helvetica, sans-serif ;">
+    <h1 class="mainTitle">Publicly Open & Official Housing Points Standings</h1>
+    <div class="container">
+      <div class="flex1" style="overflow-x:auto;">
+        <form name="classForm" action="" method="GET">
+            <label for="ClassYear">Class Year:</label>
+            <select name="classYear" id="classYear">
+              <option value="allMembers" id = "allMembers" selected=True>All Members</option>
+              <option value="firstYears" id = "firstYears">First Years</option>
+              <option value="sophomores" id = "sophomores">Sophomores</option>
+              <option value="juniors" id = "juniors">Juniors</option>
+              <option value="seniors"id = "seniors">Seniors</option>
+            </select>
+            <button type="submit">Submit</button>
+        </form>
+      </div>
+      <div style="overflow-x:auto;" class="flex2">
+        <table id="root">
+          <tr>
+            <th>Rank:</th>
+            <th>Points:</th>
+            <th>First Name:</th>
+            <th>Last Name:</th>
+            <th>Class:</th>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
